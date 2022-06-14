@@ -1,0 +1,129 @@
+@import 'source';
+
+#jordy-wrap {
+  max-width: 550px;
+  height: 80%;
+  margin: 0 auto;
+
+  >#jordy-box {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    @include flex(flex-end, center, column);
+
+    >#mushroom {
+      width: 20%;
+      height: 20px;
+      background-color: $dinosaur-yellow;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    >#face {
+      width: 100%;
+      height: 100px;
+      background-color: $dinosaur-mint;
+
+      >#eyes-box {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        @include flex(space-between, center, row);
+
+        >#eyes {
+          width: 20%;
+          height: 100%;
+          background-color: $ele-w;
+
+          >#eye {
+            width: 10%;
+            height: 100%;
+            background-color: $ele-d;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      >#nose-box {
+        width: fit-content;
+        height: 60%;
+        margin: 0 auto;
+        display: flex;
+
+        >#nose {
+          margin: 0 10px;
+          width: 5px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: $ele-d;
+        }
+      }
+
+      >#teeth-box {
+        bottom: -20px;
+
+        >#teeth {
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+      }
+    }
+
+    >#mouse-box {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      transition: 3s;
+
+      >#mouse {
+        width: 100%;
+        height: 100%;
+        background-color: $ele-gd;
+        z-index: 2;
+      }
+
+      >#open {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        z-index: 1;
+      }
+    }
+
+    >#under {
+      width: 100%;
+      height: 10%;
+      background-color: $dinosaur-mint;
+
+      >#teeth-box {
+        top: -20px;
+
+        >#teeth {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+
+        > #tongue{
+          width: 200%;
+          height: 30px;
+          background-color: $dinosaur-red;
+          border-radius: 10px 10px 30px 30px;
+        }
+      }
+    }
+  }
+}
+
+#teeth-box {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  z-index: 5;
+
+  >#teeth {
+    width: 100%;
+    height: 100%;
+    background-color: $ele-w;
+  }
+}
