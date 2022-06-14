@@ -1,0 +1,41 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+// color
+$ele-w : #f2f2f2;
+$ele-g : #7E7E7E;
+$ele-gd : #505050;
+$ele-d : #2C2C2C;
+
+$dinosaur-mint: #92E8A7;
+$dinosaur-yellow : #FEDE70;
+$dinosaur-red : #FF7373;
+$dinosaur-g : #72B583;
+$dinosaur-dg : #42694C;
+
+$mycolor-1 : #D2B9E0;
+$mycolor-2 : #B782D7;
+$mycolor-3 : #8A62A3;
+$mycolor-4 : #493457;
+
+$grad-b : #72A6C2;
+
+$golf : #2E5F42;
+$luckygame : #102742;
+
+// size
+
+
+// class
+.pos-rela{
+  position: relative;
+}
+.pos-abso{
+  position: absolute;
+}
+
+// @mixin
+@mixin flex($jus, $align, $direction) {
+  justify-content: $jus;
+  align-items: $align;
+  flex-direction: $direction;
+}

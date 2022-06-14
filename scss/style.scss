@@ -1,0 +1,16 @@
+@import 'source';
+
+#root{
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient($ele-d, $mycolor-4, $grad-b);
+}
+
+// logo
+#top{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  @include flex(center,center, column);
+}
