@@ -1,8 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, li, button {
+  border: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 .pos-rela {
@@ -11,4 +16,12 @@
 
 .pos-abso {
   position: absolute;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
 }

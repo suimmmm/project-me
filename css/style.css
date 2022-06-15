@@ -1,8 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, li, button {
+  border: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 .pos-rela {
@@ -16,41 +21,80 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2C2C2C), color-stop(#493457), to(#72A6C2));
+  overflow: hidden;
   background: linear-gradient(#2C2C2C, #493457, #72A6C2);
 }
 
 #top {
   width: 100%;
   height: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #door-shadow {
   width: 100%;
   height: 20%;
 }
-
 #door-shadow > #shadow {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background: #493457;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  transform: rotate(-180deg);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+#menu-wrap {
+  transition: left 1s;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: row;
+}
+#menu-wrap > #menu-btn {
+  width: 80px;
+  height: 80px;
+  margin: 50px 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #8A62A3;
+  color: #f2f2f2;
+  font-size: 2rem;
+}
+#menu-wrap > #menu-box {
+  width: 300px;
+  height: 100%;
+  background-color: #8A62A3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#menu-wrap > #menu-box > ul {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#menu-wrap > #menu-box > ul > li {
+  width: 100%;
+}
+#menu-wrap > #menu-box > ul > li > button {
+  background-color: inherit;
+  color: #f2f2f2;
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
 }

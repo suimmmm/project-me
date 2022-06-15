@@ -10,9 +10,11 @@
   <title>main</title>
 </head>
 <body>
-  <div id="root">
+  <div id="root" class="pos-rela">
     <div id="top">
-      <img width="100px" height="80px" src="./img/logo-w.gif" alt="">
+      <a href="./main.html">
+        <img width="100px" height="80px" src="./img/logo-w.gif" alt="">
+      </a>
     </div>
     <div id="jordy-wrap">
       <div id="jordy-box">
@@ -50,9 +52,12 @@
           <div id="teeth-box" class="pos-abso">
             <div id="teeth"></div>
             <div id="teeth"></div>
-            <div id="teeth"></div>
-            <div id="tongue"></div>
-            <div id="teeth"></div>
+            <div id="tongue">
+              <div id="arrow-box" class="pos-rela display-none">
+                <div id="arrow"></div>
+                <div id="arrow" class="sub"></div>
+              </div>
+            </div>
             <div id="teeth"></div>
             <div id="teeth"></div>
           </div>
@@ -60,6 +65,17 @@
       </div>
       <div id="door-shadow" class="pos-rela">
         <div id="shadow" class="pos-abso"></div>
+      </div>
+    </div>
+    <div id="menu-wrap" class="pos-abso">
+      <button id="menu-btn"><</button>
+      <div id="menu-box">
+        <ul>
+          <li><button data-btn="0">Me</button></li>
+          <li><button data-btn="1">Golf</button></li>
+          <li><button data-btn="2">Lucky Game</button></li>
+          <li><button data-btn="3">Plan</button></li>
+        </ul>
       </div>
     </div>
   </div>
