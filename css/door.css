@@ -18,6 +18,14 @@ ul, li, button {
   position: absolute;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 #door-wrap {
   max-width: 550px;
   height: 80%;
