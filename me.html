@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <script src="./js/event.js" defer></script> -->
+  <link rel="stylesheet" href="./css/slide.css">
+  <script src="./js/slide.js" defer></script>
   <title>me</title>
 </head>
 <body>
@@ -15,7 +16,22 @@
         <img width="100px" height="80px" src="./img/logo-w.gif" alt="">
       </a>
     </div>
-    
+    <div id="slide-wrap" class="pos-rela">
+      <div id="cir-box" class="pos-rela">
+        <div id="cir-item" class="pos-rela">
+          <div id="item" class="pos-abso">1</div>
+          <div id="item" class="pos-abso">2</div>
+          <div id="item" class="pos-abso">3</div>
+          <div id="item" class="pos-abso">4</div>
+        </div>
+      </div>
+      <div id="slide-btn-box" class="pos-abso">
+        <button id="btn" data-btn="0"></button>
+        <button id="btn" data-btn="1"></button>
+        <button id="btn" data-btn="2"></button>
+        <button id="btn" data-btn="3"></button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
