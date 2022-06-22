@@ -1,7 +1,7 @@
 # 포트폴리오
-1. 나에 대해 소개 (포트폴리오)
-2. 연출은 '엘리베이터 open/close' 로 엘리베이터가 열릴때마다 그 층의 세계가 열리는 것 -> 이러한 느낌을 가지고 연출 시도 -> 내가 좋아하는 죠르디 공룡을 2D로 제작 -> https://www.figma.com/file/l6tHC3FB5XTbvCUxQo3LUC/myself-%EC%99%84%EC%84%B1%EB%B3%B8
-3. 프로젝트 구성 (폴더트리)
+1. 나에 대해 소개 (포트폴리오) -> 
+2. 연출은 '엘리베이터 open/close' 로 엘리베이터가 열릴때마다 그 층의 세계가 열리는 것 -> 이러한 느낌을 가지고 연출 시도 -> 내가 좋아하는 죠르디 공룡을 2D로 제작 -> https://www.figma.com/file/FlmOdVETwjuAs0iA8C8ED4/%5B%EB%8A%A5%EB%A0%A5%EB%8B%A8%EC%9C%8414%5D-%EC%8A%A4%EB%A7%88%ED%8A%B8%EB%AC%B8%ED%99%94%EC%95%B1UI%EB%94%94%EC%9E%90%EC%9D%B8_%EC%A0%95%EC%88%98%EC%9E%84_%ED%8F%89%EA%B0%80_%EC%A0%9C%EC%B6%9C
+3. 프로젝트 구성 (폴더트리) -> https://www.figma.com/file/YM8UeYX5z0mUXNOs93drg4/about---web
 4. 작업 순서
 
 
