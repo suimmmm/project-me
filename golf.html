@@ -16,15 +16,28 @@
     </div>
     <div id="mid-wrap">
       <div id="door-wrap">
-        <div id="door-top"></div>
-        <div id="door-mid" class="pos-rela">
-          <i class="fa-solid fa-golf-ball-tee" id="logo"></i>
-          <div id="door-handle" class="pos-abso"></div>
+        <h1>골프 아카데미</h1>
+        <div id="door-box">
+          <div id="door-top"></div>
+          <div id="door-mid" class="pos-rela">
+            <i class="fa-solid fa-golf-ball-tee" id="logo"></i>
+            <div id="door-handle" class="pos-abso"></div>
+          </div>
+          <div id="door-bottom"></div>
         </div>
-        <div id="door-bottom"></div>
       </div>
-      <!-- <div id="chatting-wrap"></div> -->
+      <div id="chatting-wrap" class="display-none"></div>
     </div>
   </div>
+
+  <script>
+    const doorOpen = document.getElementById('door-mid');
+
+    console.log(doorOpen)
+
+    doorOpen.addEventListener('click', function(){
+      
+    })
+  </script>
 </body>
 </html>

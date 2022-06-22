@@ -61,29 +61,47 @@ ul, li, button {
 }
 #mid-wrap {
   margin: 0 auto;
-  max-width: 550px;
   width: 100%;
   height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 #door-wrap {
+  max-width: 350px;
   width: 60%;
   height: 80%;
   margin: 0 auto;
 }
-#door-wrap > #door-top {
-  width: 100%;
-  height: 5%;
+#door-wrap h1 {
+  color: #f2f2f2;
+  margin: 20px auto;
+  text-align: center;
+}
+#door-wrap > #door-box {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#door-wrap > #door-box > #door-top {
+  width: 200px;
+  height: 20px;
   background-color: #92E8A7;
 }
-#door-wrap > #door-bottom {
-  width: 100%;
-  height: 5%;
+#door-wrap > #door-box > #door-bottom {
+  width: 200px;
+  height: 20px;
   background-color: #92E8A7;
 }
-#door-wrap > #door-mid {
-  width: 90%;
-  height: 90%;
+#door-wrap > #door-box > #door-mid {
+  width: 180px;
+  height: 350px;
   margin: 0 auto;
   background-color: #2E5F42;
   display: flex;
@@ -91,15 +109,23 @@ ul, li, button {
   align-items: center;
   flex-direction: column;
 }
-#door-wrap > #door-mid > #logo {
+#door-wrap > #door-box > #door-mid > #logo {
   font-size: 7rem;
   color: #f2f2f2;
 }
-#door-wrap > #door-mid > #door-handle {
+#door-wrap > #door-box > #door-mid > #door-handle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: #92E8A7;
   top: 50%;
   right: 10%;
+}
+
+#chatting-wrap {
+  margin: 0 auto;
+  border: 1px solid;
+  width: 60%;
+  height: 80%;
+  max-width: 550px;
 }
