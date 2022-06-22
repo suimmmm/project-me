@@ -1,0 +1,48 @@
+@import 'source';
+
+#mid-wrap{
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  height: 80%;
+}
+
+#door-wrap{
+  width: 60%;
+  height: 80%;
+  margin: 0 auto;
+
+  > #door-top{
+    width: 100%;
+    height: 5%;
+    background-color: $dinosaur-mint;
+  }
+  > #door-bottom{
+    width: 100%;
+    height: 5%;
+    background-color: $dinosaur-mint;
+  }
+
+  > #door-mid{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    background-color: $golf;
+    display: flex;
+    @include flex(center,center,column);
+
+    > #logo{
+      font-size: 7rem;
+      color: $ele-w;
+    }
+
+    > #door-handle{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $dinosaur-mint;
+      top: 50%;
+      right: 10%;
+    }
+  }
+}
