@@ -1,0 +1,130 @@
+@import 'source';
+
+#revolution-wrap {
+  margin-top: 50px;
+  max-width: 600px;
+  max-height: 600px;
+  width: 90%;
+  height: 90vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  @include flex(center, center, column);
+
+  >#revolution-box {
+    width: 95%;
+    height: 95%;
+
+    >#revolution {
+      border-radius: 50%;
+      color: $ele-w;
+      border: 2px solid;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      @include flex(center, center, column);
+
+      &:nth-child(1) {
+        >#box {
+          width: 150%;
+          height: 150%;
+        }
+      }
+
+      &:nth-child(2) {
+        >#box {
+          width: 100%;
+          height: 100%;
+
+          #talk-wrap{
+            width: max-content;
+            top: -180%;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        >#box {
+          width: 92%;
+          height: 92%;
+
+          #talk-wrap{
+            width: max-content;
+            top: -180%;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        >#box {
+          width: 87%;
+          height: 87%;
+        }
+      }
+
+      &:nth-child(5) {
+        >#box {
+          width: 85%;
+          height: 85%;
+        }
+      }
+
+      >#box {
+        transform: rotate(360deg);
+
+        >#icon-box {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          @include flex(center, center, column);
+          border-radius: 50%;
+          background-color: $ele-w;
+          color: $ele-d;
+        }
+      }
+    }
+  }
+}
+
+#talk-wrap {
+  width: 150px;
+  top: -100%;
+  left: -100%;
+
+  >#talk-box {
+    background-color: $ele-w;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  >#tr {
+    width: 0;
+    height: 0;
+    border-top: 10px solid $ele-w;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin: 0 auto;
+  }
+}
+
+@for $i from 1 to 6 {
+  #revolution:nth-child(#{$i}) {
+    width: 20% * $i;
+    height: 20% * $i;
+    z-index: 10 - $i;
+
+    >#box {
+      animation: rotateAni 5s * $i linear infinite;
+
+      >#icon-box {
+        animation: rotateAniTwo 5s * $i linear infinite;
+      }
+    }
+  }
+}

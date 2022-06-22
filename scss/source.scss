@@ -51,3 +51,24 @@ $luckygame : #102742;
   align-items: $align;
   flex-direction: $direction;
 }
+
+// animation
+@keyframes rotateAni {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateAniTwo {
+  from {
+    transform: rotate(-0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
