@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/chatting.css">
+  <script src="./js/work.js" defer></script>
   <script src="https://kit.fontawesome.com/d00def0550.js" crossorigin="anonymous"></script>
   <title>golf</title>
 </head>
@@ -14,30 +15,32 @@
     <div id="top">
       <img width="100px" height="80px" src="./img/logo-w.gif" alt="">
     </div>
-    <div id="mid-wrap">
-      <div id="door-wrap">
+    <div id="mid-wrap" class="">
+      <div id="door-wrap" class="display-block">
         <h1>골프 아카데미</h1>
-        <div id="door-box">
+        <div id="door-box" class="pos-rela">
           <div id="door-top"></div>
           <div id="door-mid" class="pos-rela">
             <i class="fa-solid fa-golf-ball-tee" id="logo"></i>
             <div id="door-handle" class="pos-abso"></div>
           </div>
+          <div id="door-back" class="pos-abso"></div>
           <div id="door-bottom"></div>
         </div>
       </div>
-      <div id="chatting-wrap" class="display-none"></div>
+      <div id="chatting-wrap" class="display-none">
+        <div id="phone-box">
+          <div id="chatting-list">
+            <div id="me" class="pos-rela">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, rerum.
+              <div id="me-icon" class="pos-abso"></div>
+            </div>
+            <div id="other" class="pos-rela">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptates voluptatem ullam vitae, facere incidunt atque veritatis voluptatibus minima? Omnis aspernatur ratione cum, quos earum mollitia enim pariatur odio repellat.
+              <div id="other-icon" class="pos-abso"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <script>
-    const doorOpen = document.getElementById('door-mid');
-
-    console.log(doorOpen)
-
-    doorOpen.addEventListener('click', function(){
-      
-    })
-  </script>
 </body>
 </html>

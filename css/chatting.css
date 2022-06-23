@@ -74,6 +74,8 @@ ul, li, button {
   width: 60%;
   height: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 #door-wrap h1 {
   color: #f2f2f2;
@@ -88,6 +90,8 @@ ul, li, button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-animation: rotateDoor 3s linear infinite;
+          animation: rotateDoor 3s linear infinite;
 }
 #door-wrap > #door-box > #door-top {
   width: 200px;
@@ -108,6 +112,12 @@ ul, li, button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 1s;
+}
+#door-wrap > #door-box > #door-mid.toggle {
+  transform: rotateY(120deg);
 }
 #door-wrap > #door-box > #door-mid > #logo {
   font-size: 7rem;
@@ -121,11 +131,106 @@ ul, li, button {
   top: 50%;
   right: 10%;
 }
+#door-wrap > #door-box > #door-back {
+  width: 180px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f2f2f2;
+  z-index: -1;
+}
 
+@-webkit-keyframes rotateDoor {
+  from {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(25deg);
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateDoor {
+  from {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(25deg);
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
 #chatting-wrap {
   margin: 0 auto;
   border: 1px solid;
   width: 60%;
   height: 80%;
   max-width: 550px;
+}
+#chatting-wrap > #phone-box {
+  max-width: 500px;
+  min-width: 300px;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 5px solid #2C2C2C;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#chatting-wrap > #phone-box > #chatting-list {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#chatting-wrap > #phone-box > #chatting-list > div {
+  max-width: 250px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+#chatting-wrap > #phone-box > #chatting-list > #me {
+  border: 1px solid;
+  align-self: flex-end;
+}
+#chatting-wrap > #phone-box > #chatting-list > #me > #me-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #92E8A7;
+  top: -15px;
+  left: -15px;
+  border-radius: 10px;
+}
+#chatting-wrap > #phone-box > #chatting-list > #other {
+  border: 1px solid;
+  align-self: flex-start;
+}
+#chatting-wrap > #phone-box > #chatting-list > #other > #other-icon {
+  width: 50px;
+  height: 40px;
+  background-color: #f2f2f2;
+  top: -20px;
+  right: -20px;
+  border-radius: 10px;
+  background-image: url("../img/logo-b.gif");
+  background-size: contain;
 }

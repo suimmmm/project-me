@@ -44,6 +44,9 @@ $luckygame : #102742;
 .display-block{
   display: block;
 }
+.display-flex{
+  display: flex;
+}
 
 // @mixin
 @mixin flex($jus, $align, $direction) {
