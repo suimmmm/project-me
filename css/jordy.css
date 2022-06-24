@@ -26,6 +26,10 @@ ul, li, button {
   display: block;
 }
 
+.display-flex {
+  display: flex;
+}
+
 @-webkit-keyframes rotateAni {
   from {
     transform: rotate(0deg);

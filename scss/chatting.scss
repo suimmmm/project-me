@@ -13,8 +13,6 @@
   width: 60%;
   height: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 
   h1{
     color: $ele-w;
@@ -44,12 +42,18 @@
       width: 180px;
       height: 350px;
       margin: 0 auto;
-      background-color: $golf;
       display: flex;
       @include flex(center,center,column);
       transform-style: preserve-3d;
       transform-origin: left center;
       transition: transform 1s;
+      
+      &.golf{
+        background-color: $golf;
+      }
+      &.game{
+        background-color: $luckygame;
+      }
       
       &.toggle{
         transform: rotateY(120deg);
@@ -90,7 +94,6 @@
 
 #chatting-wrap{
   margin: 0 auto;
-  border: 1px solid;
   width: 60%;
   height: 80%;
   max-width: 550px;
@@ -101,17 +104,40 @@
     width: 80%;
     height: 100%;
     margin: 0 auto;
+    padding: 20px 0;
     border: 5px solid $ele-d;
     border-radius: 20px;
     background-color: $ele-w;
     display: flex;
-    @include flex(center,center,column);
+    @include flex(flex-start,center,column);
+    overflow: hidden;
+
+    &.golf{
+      background: linear-gradient($ele-d, $golf);
+    }
+    &.game{
+      background: linear-gradient($ele-d, $luckygame);
+    }
 
     >#chatting-list{
-      width: 90%;
+      width: 100%;
+      color: $ele-w;
       height: 90%;
+      padding: 0 10px;
+      margin: 0 auto;
+      overflow-y: scroll;
+      z-index: 5;
       display: flex;
-      @include flex(flex-start, center, column);
+      flex-direction: column;
+      &::-webkit-scrollbar{
+        width: 10px;
+        background-color: $ele-w;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: $dinosaur-mint;
+        border-radius: 10px;
+      }
 
       > div{
         max-width: 250px;
@@ -145,6 +171,42 @@
           border-radius: 10px;
           background-image: url('../img/logo-b.gif');
           background-size: contain;
+        }
+      }
+    }
+
+    > #list-btn-box{
+      width: 100%;
+      height: 10%;
+      bottom: 0;
+      left: 0;
+      border-radius: 10px;
+      background-color: $ele-w;
+      z-index: 6;
+      transition: height 1s;
+
+      > #up-btn{
+        display: block;
+        margin: 20px auto;
+        width: 150px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: $ele-d;
+        opacity: 0.5;
+      }
+      
+      > #btn-box{
+        width: 100%;
+        height: fit-content;
+
+        > #btn{
+          margin: 5px auto;
+          padding: 10px 0;
+          width: 80%;
+          display: block;
+          font-size: large;
+          text-align: left;
+          background-color: inherit;
         }
       }
     }

@@ -26,6 +26,10 @@ ul, li, button {
   display: block;
 }
 
+.display-flex {
+  display: flex;
+}
+
 @-webkit-keyframes rotateAni {
   from {
     transform: rotate(0deg);
@@ -74,8 +78,6 @@ ul, li, button {
   width: 60%;
   height: 80%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 #door-wrap h1 {
   color: #f2f2f2;
@@ -107,7 +109,6 @@ ul, li, button {
   width: 180px;
   height: 350px;
   margin: 0 auto;
-  background-color: #2E5F42;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,6 +116,12 @@ ul, li, button {
   transform-style: preserve-3d;
   transform-origin: left center;
   transition: transform 1s;
+}
+#door-wrap > #door-box > #door-mid.golf {
+  background-color: #2E5F42;
+}
+#door-wrap > #door-box > #door-mid.game {
+  background-color: #102742;
 }
 #door-wrap > #door-box > #door-mid.toggle {
   transform: rotateY(120deg);
@@ -172,7 +179,6 @@ ul, li, button {
 }
 #chatting-wrap {
   margin: 0 auto;
-  border: 1px solid;
   width: 60%;
   height: 80%;
   max-width: 550px;
@@ -183,21 +189,41 @@ ul, li, button {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  padding: 20px 0;
   border: 5px solid #2C2C2C;
   border-radius: 20px;
   background-color: #f2f2f2;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#chatting-wrap > #phone-box > #chatting-list {
-  width: 90%;
-  height: 90%;
-  display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
+}
+#chatting-wrap > #phone-box.golf {
+  background: linear-gradient(#2C2C2C, #2E5F42);
+}
+#chatting-wrap > #phone-box.game {
+  background: linear-gradient(#2C2C2C, #102742);
+}
+#chatting-wrap > #phone-box > #chatting-list {
+  width: 100%;
+  color: #f2f2f2;
+  height: 90%;
+  padding: 0 10px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+#chatting-wrap > #phone-box > #chatting-list::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+#chatting-wrap > #phone-box > #chatting-list::-webkit-scrollbar-thumb {
+  background-color: #92E8A7;
+  border-radius: 10px;
 }
 #chatting-wrap > #phone-box > #chatting-list > div {
   max-width: 250px;
@@ -233,4 +259,38 @@ ul, li, button {
   border-radius: 10px;
   background-image: url("../img/logo-b.gif");
   background-size: contain;
+}
+#chatting-wrap > #phone-box > #list-btn-box {
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  z-index: 6;
+  transition: height 1s;
+}
+#chatting-wrap > #phone-box > #list-btn-box > #up-btn {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #2C2C2C;
+  opacity: 0.5;
+}
+#chatting-wrap > #phone-box > #list-btn-box > #btn-box {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#chatting-wrap > #phone-box > #list-btn-box > #btn-box > #btn {
+  margin: 5px auto;
+  padding: 10px 0;
+  width: 80%;
+  display: block;
+  font-size: large;
+  text-align: left;
+  background-color: inherit;
 }
