@@ -87,7 +87,7 @@
         top: 0;
         right: 0;
 
-        &:nth-child(1){
+        &:nth-child(1) {
           left: 0;
         }
       }
@@ -98,7 +98,7 @@
         height: 100%;
         z-index: 1;
 
-        &:hover{
+        &:hover {
           color: red;
         }
       }
@@ -117,7 +117,7 @@
           border-top-right-radius: 20px;
         }
 
-        > #tongue{
+        >#tongue {
           width: 400%;
           height: 30px;
           background-color: $dinosaur-red;
@@ -143,25 +143,26 @@
   }
 }
 
-#arrow-box{
+#arrow-box {
   transition: 5s;
-  > #arrow{
+
+  >#arrow {
     margin: 10px auto;
     width: 0px;
     height: 0px;
-    border-bottom:  70px solid $dinosaur-yellow;
-    border-left:  50px solid transparent;
-    border-right:  50px solid transparent;
+    border-bottom: 70px solid $dinosaur-yellow;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 
-    &.sub{
-      border-bottom:  50px solid $dinosaur-yellow;
-      border-left:  30px solid transparent;
-      border-right:  30px solid transparent;
+    &.sub {
+      border-bottom: 50px solid $dinosaur-yellow;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translateX(-50%);
     }
   }
-  
+
 }

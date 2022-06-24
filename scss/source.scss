@@ -1,9 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-ul, li, button{
+
+ul,
+li,
+button {
   border: none;
   text-decoration: none;
   list-style: none;
@@ -31,20 +34,23 @@ $luckygame : #102742;
 
 
 // class
-.pos-rela{
+.pos-rela {
   position: relative;
 }
-.pos-abso{
+
+.pos-abso {
   position: absolute;
 }
 
-.display-none{
+.display-none {
   display: none;
 }
-.display-block{
+
+.display-block {
   display: block;
 }
-.display-flex{
+
+.display-flex {
   display: flex;
 }
 

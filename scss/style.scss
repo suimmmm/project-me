@@ -33,7 +33,7 @@
 }
 
 // menu-wrap
-#menu-wrap{
+#menu-wrap {
   transition: right 1s;
   z-index: 10;
   height: 100%;
@@ -42,7 +42,7 @@
   display: flex;
   @include flex(flex-end, flex-start, row);
 
-  > #menu-btn{
+  >#menu-btn {
     width: 50px;
     height: 50px;
     margin: 50px 0;
@@ -53,21 +53,23 @@
     font-size: 2rem;
   }
 
-  > #menu-box{
+  >#menu-box {
     width: 300px;
     height: 100%;
     background-color: $mycolor-3;
     display: flex;
     @include flex(center, center, row);
 
-    > ul{
+    >ul {
       width: 50%;
       height: 40%;
       display: flex;
-      @include flex(space-between, center,column);
-      > li{
+      @include flex(space-between, center, column);
+
+      >li {
         width: 100%;
-        > button{
+
+        >button {
           background-color: inherit;
           color: $ele-w;
           width: 100%;
@@ -78,4 +80,3 @@
     }
   }
 }
-
