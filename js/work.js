@@ -48,8 +48,8 @@ const chattingList = document.getElementById('chatting-list')
 
 let upBtnFlag = false;
 let chattingListMe = ['기획 의도', '컨셉', '이러한 이유']
-let chattingListGolfOther = ['A-other', 'B-other', 'C-other']
-let chattingListGameOther = ['A-other', 'B-other', 'C-other']
+let chattingListGolfOther = ['골프를 처음 시작했을 때, 알고싶었던 것들과 다니면서 원하는 서비스를 얻기위해 기획했다.', '어느 한 골프 연습장의 어플리케이션', '요즘 골프를 많이 하는 사람들이 증가하기도 하고, 내가 즐겨하는 운동이기 때문에 시작했다.']
+let chattingListGameOther = ['행운이랑 관련된 게임을 제작하고 싶어서 기획했다.', '카지노, 가면', '가챠를 하는 것이 게임에는 필수라고 생각이 들어서 시작했다.']
 
 upBtn.addEventListener('click', function () {
   if (!upBtnFlag) {

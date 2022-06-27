@@ -138,8 +138,9 @@ button {
   align-items: center;
   flex-direction: column;
   border-radius: 50%;
-  background-color: #f2f2f2;
-  color: #2C2C2C;
+  background-color: #8A62A3;
+  color: #f2f2f2;
+  text-align: center;
 }
 
 #talk-wrap {
@@ -159,6 +160,7 @@ button {
   height: fit-content;
   border-radius: 10px;
   margin: 0 auto;
+  color: #2C2C2C;
 }
 #talk-wrap > #tr {
   width: 0;

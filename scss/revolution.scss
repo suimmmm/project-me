@@ -80,8 +80,9 @@
           display: flex;
           @include flex(center, center, column);
           border-radius: 50%;
-          background-color: $ele-w;
-          color: $ele-d;
+          background-color: $mycolor-3;
+          color: $ele-w;
+          text-align: center;
         }
       }
     }
@@ -101,6 +102,7 @@
     height: fit-content;
     border-radius: 10px;
     margin: 0 auto;
+    color: $ele-d;
   }
 
   >#tr {
