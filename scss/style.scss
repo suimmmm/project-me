@@ -80,3 +80,17 @@
     }
   }
 }
+
+#footer{
+  color: $ele-w;
+  top: 50px;
+  left: -300px;
+  transform: rotate(90deg) translate(50%, 50%);
+  display: block;
+}
+
+@media (max-width:750px){
+  #footer{
+    display: none;
+  }
+}
