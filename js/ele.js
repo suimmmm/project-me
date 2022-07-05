@@ -11,7 +11,7 @@ const menuWrap = document.getElementById('menu-wrap');
 const menuItem = document.querySelector('ul');
 let menuFlag = false;
 let menuItemFlag = false;
-let dataList = ['me.html', 'golf.html', 'luckygame.html', 'plan.html'];
+let dataList = ['/html/me.html', '/html/golf.html', '/html/luckygame.html', '/html/plan.html'];
 let colorList = ['#493457', '#2E5F42', '#102742', '#2C2C2C'];
 const tongue = document.getElementById('tongue');
 
@@ -27,7 +27,7 @@ openLink.addEventListener('click', function () {
 menuItem.addEventListener('click', function (event) {
   // console.log(typeof event.target.dataset.btn);
   let btnNum = parseInt(event.target.dataset.btn);
-  openLink.href = 'http://127.0.0.1:5500/' + dataList[btnNum];
+  openLink.href = 'http://suim00.dothome.co.kr/' + dataList[btnNum];
   // console.log(openLink.href)
   openLink.style.backgroundColor = `${colorList[btnNum]}`;
   menuItemFlag = true;
