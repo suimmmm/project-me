@@ -141,3 +141,25 @@ if (document.querySelector('title').textContent === 'golf') {
     }, 1000)
   })
 }
+
+const menuBtn = document.getElementById('menu-btn')
+const menuWrap = document.getElementById('menu-wrap')
+let menuFlag = false;
+
+function menuBoxFlagFunction(){
+  if(!menuFlag){
+    menuBtn.textContent = '>';
+    menuWrap.style.right = '0';
+    menuWrap.style.zIndex = '10';
+    menuFlag = true;
+  }
+  else{
+    menuBtn.textContent = '<';
+    menuWrap.style.right = '-300px';
+    menuFlag = false;
+  }
+}
+
+menuBtn.addEventListener('click', function(){
+  menuBoxFlagFunction();
+})
