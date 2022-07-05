@@ -11,7 +11,7 @@ const menuWrap = document.getElementById('menu-wrap');
 const menuItem = document.querySelector('ul');
 let menuFlag = false;
 let menuItemFlag = false;
-let dataList = ['/html/me.html', '/html/golf.html', '/html/luckygame.html', '/html/plan.html'];
+let dataList = ['me.html', 'golf.html', 'luckygame.html', 'plan.html'];
 let colorList = ['#493457', '#2E5F42', '#102742', '#2C2C2C'];
 const tongue = document.getElementById('tongue');
 
