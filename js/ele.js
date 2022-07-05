@@ -27,7 +27,7 @@ openLink.addEventListener('click', function () {
 menuItem.addEventListener('click', function (event) {
   // console.log(typeof event.target.dataset.btn);
   let btnNum = parseInt(event.target.dataset.btn);
-  openLink.href = 'http://suim00.dothome.co.kr/' + dataList[btnNum];
+  openLink.href = dataList[btnNum];
   // console.log(openLink.href)
   openLink.style.backgroundColor = `${colorList[btnNum]}`;
   menuItemFlag = true;
